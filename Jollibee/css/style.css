@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav {
+  background-color: #CC1237;
+  border-bottom: 5px solid #FFB617;
+}
+
+header nav img {
+  position: absolute;
+  top: 1px;
+  left: 150px;
+}
+
+header nav ul {
+  margin: 0 auto;
+  width: 56%;
+  height: 18vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+header nav ul li {
+  list-style: none;
+  height: 10px;
+}
+
+header nav ul li a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 11pt;
+  font-family: 'Quicksand', sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #FFB617;
+}
+
+#slider {
+  width: 100%;
+  margin-top: 40px;
+}
+
+#slider .slider {
+  margin: 0 auto;
+  width: 940px;
+  height: 465px;
+  border-radius: 20px;
+  background-color: #CC1237;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider .slider img {
+  position: absolute;
+}
+
+#slider .slider .breakfast-chickenjoy {
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+}
+
+#slider .slider .button-group {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: 70px;
+  left: 1000px;
+  z-index: 2;
+}
+
+#slider .slider .button-group button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50% 50%;
+  background: none;
+  background-color: grey;
+  border: none;
+}
+
+#slider .slider .button-group button:hover {
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  height: 100vh;
+  background-color:#383F69;
+}
+
+.score{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #DDDDDD;
+}
+
+.score p{
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.intro{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #DDDDDD;
+  transition: opacity .5s ease;
+}
+
+.intro button, .options button{
+  border:none;
+  background:none;
+  font-size: 20px;
+  background-color: #39BC39;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.match{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: opacity .5s ease .5s;
+}
+.match .winner{
+  text-align: center;
+  color: #DDDDDD;
+}
+.match .hands{
+  display: flex;
+  justify-content: space-around;
+}
+.match .hands .player-hand{
+  transform: rotateY(180deg);
+}
+.match .options{
+  display: flex;
+  justify-content: space-around;
+}
+
+.fade-in{
+  opacity:1; 
+  pointer-events: all;
+}
+
+.fade-out{
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+@keyframes shakePlayer{
+  0%{
+    transform:rotateY(180deg) translateY(0px);
+  }
+  15%{
+    transform:rotateY(180deg) translateY(-50px);
+  }
+  25%{
+    transform:rotateY(180deg) translateY(0px);
+  }
+  35%{
+    transform:rotateY(180deg) translateY(-50px);
+  }
+  45%{
+    transform:rotateY(180deg) translateY(0px);
+  }
+  65%{
+    transform:rotateY(180deg) translateY(-50px);
+  }
+  76%{
+    transform:rotateY(180deg) translateY(0px);
+  }
+  85%{
+    transform:rotateY(180deg) translateY(-50px);
+  }
+  100%{
+    transform:rotateY(180deg) translateY(0px);
+  }
+}
+
+@keyframes shakeComputer{
+  0%{
+     transform:translateY(0px);
+  }
+  15%{
+     transform:translateY(-50px);
+  }
+  25%{
+     transform:translateY(0px);
+  }
+  35%{
+    transform:translateY(-50px);
+  }
+  45%{
+     transform:translateY(0px);
+  }
+  65%{
+     transform:translateY(-50px);
+  }
+  76%{
+     transform:translateY(0px);
+  }
+  85%{
+     transform:translateY(-50px);
+  }
+  100%{
+     transform:translateY(0px);
+  }
+}

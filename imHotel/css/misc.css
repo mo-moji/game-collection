@@ -1,0 +1,71 @@
+.title-line {
+  height: 2px;
+  width: 50px;
+  background-color: #000;
+  margin: 5px 0;
+}
+
+.title-line-small {
+  height: 2px;
+  width: 30px;
+  background-color: #000;
+  margin: 3px 0;
+}
+
+.scroll-input .book-form {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 999;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+}
+
+.scroll-input .book-form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll-input .book-form .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll-input .book-form .button button {
+  background: none;
+  background-color: #A2720A;
+  color: white;
+  font-size: 12px;
+  padding: 10px 90px;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.scroll-input .book-form .button button:hover {
+  opacity: .5;
+}
+/*# sourceMappingURL=misc.css.map */

@@ -1,0 +1,244 @@
+
+@import 'misc.scss';
+
+header{
+  .logo{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .navbar{
+    background-color: #000;
+    width: 100%;
+    padding: 0 50px;
+    ul{
+      height: 40px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+        li{
+          margin:0 10px;
+            a{
+              color: rgb(238, 236, 236);
+              transition: .2s;
+              display: block;
+            }
+            a:hover{
+              text-decoration: none;
+              color:$darkYellow;
+            }
+        }
+    }
+    
+    .contact{
+      a{
+        color:white;
+        margin:0 10px;
+      }
+      a:hover {
+        text-decoration: none;
+        color: $darkYellow;
+      }
+    }
+
+  }
+}
+#content{
+  background-image: url(../img/im-skyline.jpg);
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+
+    .container{
+      .landing-page{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+          color: white;
+          margin-bottom: 20px;
+        }
+        .book-form{
+          width: 900px;
+          height: 150px;;
+          background-color:rgba(255,255,255,0.7);
+          display: flex;
+          justify-content: space-around;
+          
+            .form{
+              display:flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            .button{
+              display: flex;
+              align-items: center;
+                button{
+                  background:none;
+                  background-color: $darkYellow;
+                  color: white;
+                  font-size: 12px;
+                  padding: 10px 60px;
+                  border:none;
+                  transition: .5s;
+                }
+                button:hover{
+                  opacity: .5;
+                }
+            }
+        }
+      }//end of landing page css
+      
+      .about{
+        height: 440px;
+        width: 1100px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+         .first-column{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+            .gold-text{
+              color: $darkYellow;
+            }
+            button {
+              background: none;
+              border: none;
+              background-color: $darkYellow;
+              color: white;
+              font-size: 12px;
+              padding: 10px 20px;
+            }
+         }
+         .second-column{
+           img{
+             max-width: 500px;
+           }
+          
+           
+         }
+      }// end of about css
+      
+      .room{
+        h2{
+          color: white;
+          text-align: center;
+          padding: 20px 0;
+          letter-spacing: -4px;
+        }
+        .row-one{
+           min-height: 90px;
+           width: 1100px;
+          .row {
+           background-color: #fff;
+            margin: 0 auto;
+            height: 296px;
+            .col {
+              padding: 0;
+              text-align: center;
+           
+                }
+               .info-image {
+                 background-image: url(../img/im-hotel-home-1-e1483431129295.jpg);
+                 background-size: cover;
+                 width: 275px;
+                  .info-image-content {
+                    transition: .5s;
+                    color: white;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    visibility: hidden;
+                  }
+               
+               }
+                .info-image-2 {
+                  background-image: url(../img/im-hotel-home-2-e1483433377719.jpg);
+                  background-size: cover;
+                  width: 275px;
+
+                  .info-image-2-content {
+                    transition: .5s;
+                    color: white;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    visibility: hidden;
+                  }
+                }
+            
+          }
+        } // end of row one css
+
+        .row-two{
+          width: 1100px;
+          margin-top: 20px;
+          
+        
+           .row {
+             background-color: #fff;
+               margin: 0 auto;
+               height: 296px;
+             .col {
+               padding: 0;
+               text-align: center;
+             }
+              .info-image-3 {
+                background-image: url(../img/im-hotel-im-all-about-you-e1483433919602.jpg);
+                background-size: cover;
+                width: 275px;
+
+                .info-image-3-content {
+                  transition: .5s;
+                  font-size: 40px;
+                  color: #fff;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  visibility: hidden;  
+                }
+              }
+
+              .info-image-4 {
+                background-image: url(../img/im-hotel-home-4-e1483434446717.jpg);
+                background-size: cover;
+                width: 275px;
+
+                  .info-image-4-content{
+                    transition: .5s;
+                    color: white;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    visibility: hidden;
+                  }
+              }
+           }
+        }//end of row two css
+        .info{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h5{
+            font-size: 15px;
+            color: $darkYellow;
+          }
+          p{
+            font-size: 15px;
+            color: gray;
+          }
+        }
+      }//end of room css
+    }
+}

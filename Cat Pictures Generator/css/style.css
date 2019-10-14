@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque|Literata&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav css */
+header .nav{
+  min-height: 20vh;
+  padding-top: 30px;
+  background-color: #8a2be2;
+  display: flex;
+}
+
+header .title{
+  flex:2;
+  margin-bottom: 10px;
+  font-family: 'Literata',serif;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: #d4d4d4;
+}
+header .nav .title img{
+  margin-left: 20px;
+  width: 80px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+header .nav ul {
+  margin-top:40px;
+  margin-right: 10px;
+  flex: 1;
+  list-style: none;
+  display: flex;
+
+}
+
+header .nav li {
+  background-color: blueviolet;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 20px;
+  flex: 1;
+}
+header .nav li:hover{
+  background-color: rgb(116, 35, 192);
+  border-bottom: 5px solid #d4d4d4;
+}
+header .nav a {
+  text-decoration: none;
+  color: #d4d4d4;
+}
+
+header .landing-page{
+  min-height: 80vh;
+  background-color: #8a2be2;
+  display: flex;
+  align-items:flex-end;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Darker Grotesque',
+  sans-serif;
+}
+header .landing-page .one{
+  flex: 1;
+  height: 70vh;
+  background-color: rgb(229, 255, 0);
+}
+header .landing-page .two {
+  flex: 1;
+  height: 60vh;
+  background-color: rgb(134, 255, 21);
+}
+header .landing-page .three {
+  flex: 1;
+  height: 50vh;
+  background-color: rgb(44, 255, 62);
+}
+header .landing-page .four {
+  flex: 1;
+  height: 40vh;
+  background-color: rgb(47, 213, 255);
+}
+header .landing-page .five {
+  flex: 1;
+  height: 30vh;
+  background-color: rgb(64, 43, 255);
+}
+header .landing-page .six {
+  flex: 1;
+  height: 20vh;
+  background-color: rgb(211, 35, 255);
+}
+header .landing-page .seven {
+  flex: 1;
+  height: 10vh;
+  background-color: rgb(255, 61, 223);
+}
+/* end of nav css */
+
+
+
+
+.parallax{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/majestic-cat.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#about{
+  min-height: 60vh;
+  background-color:#053264;
+  display: flex;
+  align-items: center;
+  font-family: 'Darker Grotesque',
+  sans-serif;
+}
+.facts{
+  flex: 1;
+  color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+.facts h1{
+  font-size: 50px;
+}
+.facts ul {
+  list-style: none;
+}
+.facts li{
+  padding: 3px;
+  background-color: #e7e7e7;
+  color: #053264;
+  margin: 5px;
+  font-size: 30px;
+}
+.facts .facts-api{
+  padding: 3px;
+  background-color: #e7e7e7;
+  color: #053264;
+  margin: 5px;
+  font-size: 30px;
+}
+.facts button{
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: aqua;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+.facts button:hover{
+    background-color: rgb(5, 197, 197);
+}
+
+#picture{
+  min-height: 100vh;
+  width: 100%;
+  padding: 50px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c5deea+0,8abbd7+31,8a2be2+100 */
+  background: rgb(197, 222, 234);
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(138, 43, 226, 1) 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(138, 43, 226, 1) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(197, 222, 234, 1) 0%, rgba(138, 187, 215, 1) 31%, rgba(138, 43, 226, 1) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5deea', endColorstr='#8a2be2', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.cat-generator{
+  /* height: 600px;
+  width: 700px;
+  background-color: rgba(0,0,0,0.5); */
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.cat-generator button{
+  border:none;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: #d4d4d4;
+  margin: 20px;
+  border-radius: 10px;
+}
+.cat-generator button:hover{
+  background-color: rgb(111, 34, 184);
+}
+.cat-generator img{
+  min-height: 500px;
+  min-width: 500px;
+  max-width: 1000px;
+  border-radius: 10px;
+}
+
+#testimonials{
+  min-height: 100vh;
+  width: 100%;
+ 
+  background-color: blueviolet;
+}
+.testimonials{
+   min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin:20px 0px;
+}
+#testimonials h1{
+  text-align: center;
+  font-family: 'Darker Grotesque',
+  sans-serif;
+  color:#e7e7e7;
+  margin-bottom: -50px;
+  font-size: 60px;
+
+}
+.testimonial{
+  width: 350px;
+  height: 450px;
+  padding: 20px;
+  background-color:#e7e7e7;
+  text-align: center;
+  border-radius: 20px;
+  font-family: 'Darker Grotesque',
+  sans-serif;
+}
+
+.testimonial img{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+
+.testimonial p{
+  font-size: 20px;
+}
+
+footer{
+  height: 50px;
+  background-color: rgb(14, 14, 14);
+  color: #e7e7e7;
+  text-align: center;
+  padding: 10px;
+}
